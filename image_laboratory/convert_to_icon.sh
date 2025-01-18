@@ -28,8 +28,8 @@ sizes=(16 32 48 64 128)
 
 # Convertir la imagen a formato .ico con diferentes tamaños
 for size in "${sizes[@]}"; do
-  output_icon="${output_directory}/${input_image%.*}_${size}.ico"
-  magick "$input_image" -resize "${size}x${size}" "$output_icon"
+  output_icon="${output_directory}/$(basename "${input_image%.*}")_${size}.ico"
+  magick "$input_image" -resize "${size}x${size}" "$output_icon"  
 done
 
 echo "La conversión se ha completado. Los iconos se encuentran en el directorio '$output_directory'."

@@ -4,7 +4,10 @@ Este proyecto contiene scripts en Bash que utilizan ImageMagick para realizar di
 
 ## Requisitos
 
+- Consola Shell
 - [ImageMagick](https://imagemagick.org/script/download.php)
+
+Para mas información remitirse a este [Manual](REQUERIMENTS.md)
 
 ## Uso
 
@@ -12,10 +15,18 @@ Este proyecto contiene scripts en Bash que utilizan ImageMagick para realizar di
 
 ```bash
 git clone https://github.com/developer-laoz396/magick_image_laboratory
-cd GitLocal/magick_image_laboratory
+cd /magick_image_laboratory
 ```
 
 ## Instrucciones de Ejecución
+
+### main.sh
+
+Esta opción es flexible y permite al usuario elegir qué tareas realizar.
+
+```bash
+./main.sh
+```
 
 ### convert_to_icon.sh
 
@@ -47,14 +58,12 @@ Este script realiza un recorte (trim) de una imagen eliminando los bordes vacío
 
 Sustituye <imagen> con el nombre del archivo de imagen que deseas recortar.
 
-Resultado
 El script generará una imagen recortada sin fondo en el directorio output_images.
 
-Contribuciones
+## Contribuciones
+
 Si encuentras problemas o tienes sugerencias de mejora, no dudes en abrir un issue o enviar un pull request.
 
-Licencia
+## Licencia
+
 Este proyecto está bajo la Licencia MIT.
-
-Este es solo un ejemplo básico. Asegúrate de incluir información relevante y personalizada para tu proyecto. También, si es posible, considera incluir secciones adicionales como "Instalación", "Estructura del Proyecto", "Configuración" o cualquier otra que sea relevante para los usuarios del proyecto.
-
